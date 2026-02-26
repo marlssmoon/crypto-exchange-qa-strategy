@@ -1,0 +1,36 @@
+{
+  "info": {
+    "_postman_id": "2355fd3a-6f9d-4991-a4ae-cdd48de64bcc",
+    "name": "Crypto Exchange Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52715168",
+    "_collection_link": "https://go.postman.co/collection/52715168-2355fd3a-6f9d-4991-a4ae-cdd48de64bcc?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Crypto API Checks",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        },
+        "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+      },
+      "response": []
+    }
+  ]
+}
